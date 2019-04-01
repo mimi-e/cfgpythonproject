@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Users/mimieyeoyibo/Documents/cfg_course/python/final_py_project/static/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/Users/mimieyeoyibo/Documents/cfg_course/python/final_py_project/favicon.ico">
+    <link rel="stylesheet" href="/Users/mimieyeoyibo/Documents/cfg_course/python/final_py_project/static/css/style.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans">
+    <title>Mimi's Munches</title>
+
+</head>
+<body class="contactpage">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="{{ url_for('hello')}}">Home</a>
+        <a class="nav-item nav-link" href="#Mains">Mains</a>
+        <a class="nav-item nav-link" href="#desserts">Desserts</a>
+        <a class="nav-item nav-link" href="#cocktails">Cocktails</a>
+        <a class="nav-item nav-link active" href="#Contact">Contact Me <span class="sr-only">(current)</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron text-center">
+    <h1>Mimi's Munches</h1>
+    <small>From cocktails to cakes to carbonara, a collection of my favourite cuisines!</small>
+  </div>
+
+<!-- CONTACT FORM -->
+<body>
+<div class="container bg-grey">
+  <h2 class="text-center">Contact Me!</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Got any suggestions? Any questions? Just want to say hi? Just fill in your details and I'll try my best to respond within 24 hours!</p>
+    </div>
+    <div class="col-sm-7">
+      <form method="post">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-info" type="submit">Send</button>
+
+        </div>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+  </html>

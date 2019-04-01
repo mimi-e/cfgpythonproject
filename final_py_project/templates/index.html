@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Users/mimieyeoyibo/Documents/cfg_course/python/final_py_project/static/css/style.css">
+  <!---  <link rel="icon" type="image/x-icon" href="/Users/mimieyeoyibo/Documents/cfg_course/python/final_py_project/favicon.ico"> --->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans">
+    <title>Mimi's Munches</title>
+
+</head>
+<body class="myPage">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#myPage">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#Mains">Mains</a>
+        <a class="nav-item nav-link" href="#desserts">Desserts</a>
+        <a class="nav-item nav-link" href="#cocktails">Cocktails</a>
+        <a class="nav-item nav-link" href="{{ url_for('contact')}}">Contact Me</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron text-center">
+    <h1>Mimi's Munches</h1>
+    <small>From cocktails to cakes to carbonara, a collection of my favourite cuisines!</small>
+  </div>
+
+  <div id="mains" class="container-fluid text-center">
+    <h2>Mains</h2>
+    <br>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="{{ url_for('static', filename='images/jrice.jpg')}}" class="img-thumbnail" alt="Jollof Rice">
+            </div>
+              <h5>Jollof Rice</h5>
+            </div>
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                <img src="{{ url_for('static', filename='images/ccp.jpg')}}" class="img-thumbnail" alt="Jollof Rice">
+                  </div>
+              <h5>Creamy Chicken Pasta</h5>
+            </div>
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                <img src="{{ url_for('static', filename='images/tgc.jpg')}}" class="img-thumbnail" alt="Jollof Rice">
+                  </div>
+              <h5>Thai Green Chicken</h5>
+            </div>
+          </div>
+        </div>
+
+  <div id="desserts" class="container-fluid text-center">
+    <h2>Desserts</h2>
+    <br>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="{{ url_for('static', filename='images/banana.jpg')}}" class="img-thumbnail" alt="Jollof Rice">
+            </div>
+        <h5>Banana and Walnut Cake</h5>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="{{ url_for('static', filename='images/brownie.jpg')}}" class="img-thumbnail" alt="Jollof Rice">
+            </div>
+        <h5>Chocolate Brownies</h5>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="{{ url_for('static', filename='images/churros.jpg')}}" class="img-thumbnail" alt="Jollof Rice">
+            </div>
+        <h5>Churros with Chocolate Sauce</h5>
+      </div>
+    </div>
+  </div>
+
+  <div id="cocktails" class="container-fluid text-center">
+    <h2>Cocktails</h2>
+    <br>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="{{ url_for('static', filename='images/sd.jpg')}}" class="img-thumbnail" alt="Jollof Rice">
+            </div>
+        <h5>Strawberry Daiquiri</h5>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="{{ url_for('static', filename='images/pina.jpg')}}" class="img-thumbnail" alt="Jollof Rice">
+            </div>
+        <h5>Piña Colada</h5>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="{{ url_for('static', filename='images/chap.jpg')}}" class="img-thumbnail" alt="Jollof Rice">
+            </div>
+        <h5>Chapman</h5>
+      </div>
+    </div>
+  </div>
+<!-- scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <script>
+  $(document).ready(function(){
+    $(".navbar a, [href='#myPage']").on('click', function(event) {
+
+    if (this.hash !== "#cocktails") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 10000, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+        });
+      } // End if
+    });
+  })
+  </script>
+</body>
+</html>
